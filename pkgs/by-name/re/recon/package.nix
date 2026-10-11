@@ -18,7 +18,7 @@ flutter347.buildFlutterApplication (finalAttrs: {
     hash = "sha256-y1dW8Llf3/5d5Tx6x0NCERowsSlsIntchWhCGvtfw6Y=";
   };
 
-  pubspecLock = lib.importJSON ./pubspec.lock.json;
+  autoPubspecLock = finalAttrs.src + "/pubspec.lock";
 
   nativeBuildInputs = [ copyDesktopItems ];
 
